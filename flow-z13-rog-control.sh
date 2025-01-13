@@ -6,9 +6,10 @@ if [ $EUID -ne 0 ]; then
 fi
 
 apt install git -y
-gitclone git@gitlab.com:asus-linux/asusctl.git
+git clone git@gitlab.com:asus-linux/asusctl.git
 
 cd asusctl
+
 # may need libinput10, installed before but rust compile failed until libinput-dev was installed
 apt install libclang-dev libudev-dev libfontconfig-dev build-essential cmake libxkbcommon-dev libgbm-dev libinput-dev
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
