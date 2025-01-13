@@ -3,7 +3,7 @@ These scripts are provided as-is, while they worked for me they may not for you.
 
 `flow-z13-mousefix.sh` will need to run as root which will add a script to sbin and a udev rule to trigger when the keyboard connects
 
-`flow-z13-rog-control.sh` will clone the asusctl repo, install dependencies required by the go compiler, and enable/start the asusd service
+`flow-z13-rog-control.sh` will clone the asusctl repo, install dependencies required by the rust compiler, and enable/start the asusd service
 
 ## System Information (Tested)
 - ASUS ROG Flow Z13 GZ301ZE
